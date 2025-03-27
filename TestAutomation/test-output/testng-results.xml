@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="11" failed="1" skipped="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Hi]]>
+    </line>
+    <line>
+      <![CDATA[Goodmorning]]>
+    </line>
+    <line>
+      <![CDATA[GoodMorning]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-12-08T14:38:09 IST" name="Suite" finished-at="2024-12-08T14:38:10 IST" duration-ms="453">
+    <groups>
+    </groups>
+    <test started-at="2024-12-08T14:38:09 IST" name="Test" finished-at="2024-12-08T14:38:10 IST" duration-ms="453">
+      <class name="testNG.Script01">
+        <test-method signature="Testcase()[pri:0, instance:testNG.Script01@3012646b]" started-at="2024-12-08T14:38:09 IST" name="Testcase" finished-at="2024-12-08T14:38:09 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Hi]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Testcase -->
+        <test-method signature="Testcase1()[pri:0, instance:testNG.Script01@3012646b]" started-at="2024-12-08T14:38:09 IST" name="Testcase1" finished-at="2024-12-08T14:38:09 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Goodmorning]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+      </class> <!-- testNG.Script01 -->
+      <class name="testNG.ScriptPriority">
+        <test-method signature="signup()[pri:0, instance:testNG.ScriptPriority@52719fb6]" started-at="2024-12-08T14:38:09 IST" name="signup" finished-at="2024-12-08T14:38:09 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method signature="login()[pri:1, instance:testNG.ScriptPriority@52719fb6]" started-at="2024-12-08T14:38:09 IST" name="login" finished-at="2024-12-08T14:38:09 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="homepg()[pri:2, instance:testNG.ScriptPriority@52719fb6]" started-at="2024-12-08T14:38:09 IST" name="homepg" finished-at="2024-12-08T14:38:09 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepg -->
+        <test-method signature="logout()[pri:3, instance:testNG.ScriptPriority@52719fb6]" started-at="2024-12-08T14:38:09 IST" name="logout" finished-at="2024-12-08T14:38:09 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testNG.ScriptPriority -->
+      <class name="testNG.ScriptDependsonmethod">
+        <test-method signature="signup()[pri:0, instance:testNG.ScriptDependsonmethod@1ed6388a]" started-at="2024-12-08T14:38:09 IST" name="signup" finished-at="2024-12-08T14:38:09 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method signature="login()[pri:0, instance:testNG.ScriptDependsonmethod@1ed6388a]" started-at="2024-12-08T14:38:09 IST" name="login" finished-at="2024-12-08T14:38:09 IST" depends-on-methods="testNG.ScriptDependsonmethod.signup" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testNG.ScriptDependsonmethod.login(ScriptDependsonmethod.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="home()[pri:0, instance:testNG.ScriptDependsonmethod@1ed6388a]" started-at="2024-12-08T14:38:09 IST" name="home" finished-at="2024-12-08T14:38:09 IST" depends-on-methods="testNG.ScriptDependsonmethod.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testNG.ScriptDependsonmethod.home() on instance testNG.ScriptDependsonmethod@1ed6388a depends on not successfully finished methods 
+[testNG.ScriptDependsonmethod.login() on instance testNG.ScriptDependsonmethod@1ed6388a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testNG.ScriptDependsonmethod.home() on instance testNG.ScriptDependsonmethod@1ed6388a depends on not successfully finished methods 
+[testNG.ScriptDependsonmethod.login() on instance testNG.ScriptDependsonmethod@1ed6388a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="logout()[pri:0, instance:testNG.ScriptDependsonmethod@1ed6388a]" started-at="2024-12-08T14:38:09 IST" name="logout" finished-at="2024-12-08T14:38:09 IST" depends-on-methods="testNG.ScriptDependsonmethod.home" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testNG.ScriptDependsonmethod.logout() on instance testNG.ScriptDependsonmethod@1ed6388a depends on not successfully finished methods 
+[testNG.ScriptDependsonmethod.home() on instance testNG.ScriptDependsonmethod@1ed6388a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testNG.ScriptDependsonmethod.logout() on instance testNG.ScriptDependsonmethod@1ed6388a depends on not successfully finished methods 
+[testNG.ScriptDependsonmethod.home() on instance testNG.ScriptDependsonmethod@1ed6388a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testNG.ScriptDependsonmethod -->
+      <class name="testNG.ScriptEnabled">
+        <test-method signature="login()[pri:0, instance:testNG.ScriptEnabled@4a883b15]" started-at="2024-12-08T14:38:09 IST" name="login" finished-at="2024-12-08T14:38:10 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:0, instance:testNG.ScriptEnabled@4a883b15]" started-at="2024-12-08T14:38:10 IST" name="logout" finished-at="2024-12-08T14:38:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="signup()[pri:0, instance:testNG.ScriptEnabled@4a883b15]" started-at="2024-12-08T14:38:10 IST" name="signup" finished-at="2024-12-08T14:38:10 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+      </class> <!-- testNG.ScriptEnabled -->
+      <class name="testNG.Script2">
+        <test-method signature="Testcase()[pri:0, instance:testNG.Script2@25641d39]" started-at="2024-12-08T14:38:10 IST" name="Testcase" finished-at="2024-12-08T14:38:10 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[GoodMorning]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Testcase -->
+      </class> <!-- testNG.Script2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
